@@ -17,20 +17,27 @@ main aside {
     display: none;
 }
 
+body > footer {
+    background: #666;
+}
+
 @media (min-width: 1024px) {
     header nav ul {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        background: #ccc;
+        background: #666;
         list-style-type: none;
         margin: auto;
     }
     header nav ul a {
         text-decoration: none;
+        color: white;
     }
     main {
-        padding: 0 15% 0 15%;
+        background: #999;
+        margin: 0 15% 0 15%;
+        padding: 1em;
     }
     main aside {
         display: block;
