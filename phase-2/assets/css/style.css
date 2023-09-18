@@ -1,3 +1,8 @@
+body > header {
+    position: fixed;
+    width: 100%;
+}
+
 header div{
     display: flex;
     flex-direction: row-reverse;
@@ -13,15 +18,22 @@ header nav ul {
     display: none;
 }
 
+main {
+    margin: auto;
+    padding: 6em 1em 1em 1em;
+}
+
 main aside {
     display: none;
 }
 
 body > footer {
-    background: #666;
+    background: #999;
+    padding: 1em;
 }
 
 @media (min-width: 1024px) {
+
     header nav ul {
         display: flex;
         flex-direction: row;
@@ -30,15 +42,27 @@ body > footer {
         list-style-type: none;
         margin: auto;
     }
+
     header nav ul a {
         text-decoration: none;
         color: white;
     }
+
     main {
-        background: #999;
-        margin: 0 15% 0 15%;
-        padding: 1em;
+        width: 960px;
     }
+
+    main #content {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: space-between;
+        height: 60em;
+    }
+
+    main article {
+        width: 49%;
+    }
+
     main aside {
         display: block;
         float: right;
