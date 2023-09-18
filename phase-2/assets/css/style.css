@@ -2,6 +2,7 @@ header div{
     display: flex;
     flex-direction: row-reverse;
     justify-content: start;
+    background: #999;
 }
 
 header div img {
@@ -19,6 +20,7 @@ header nav ul {
         justify-content: space-evenly;
         background: #ccc;
         list-style-type: none;
+        margin: auto;
     }
     header nav ul a {
         text-decoration: none;
