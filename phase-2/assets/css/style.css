@@ -1,3 +1,13 @@
+header div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+}
+
+header div img {
+    padding: .5em;
+}
+
 header nav ul {
     display: none;
 }
