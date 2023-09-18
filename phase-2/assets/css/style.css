@@ -13,6 +13,10 @@ header nav ul {
     display: none;
 }
 
+main aside {
+    display: none;
+}
+
 @media (min-width: 1024px) {
     header nav ul {
         display: flex;
@@ -26,3 +30,4 @@ header nav ul {
         text-decoration: none;
     }
 }
+
