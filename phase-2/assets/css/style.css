@@ -29,9 +29,12 @@ main aside {
     header nav ul a {
         text-decoration: none;
     }
+    main {
+        padding: 0 15% 0 15%;
+    }
     main aside {
-        display: flex;
-        flex-direction: column;
+        display: block;
+        float: right;
     }
 }
 
