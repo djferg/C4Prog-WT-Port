@@ -1,3 +1,7 @@
+:root {
+    --header-height: 6em; /* or whatever the height of your header is */
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -7,6 +11,7 @@ body {
 body > header {
     position: fixed;
     width: 100%;
+    height: var(--header-height);
 }
 
 header div{
@@ -14,6 +19,7 @@ header div{
     flex-direction: row-reverse;
     justify-content: start;
     background: #999;
+    height: 100%;
 }
 
 header div img {
@@ -25,7 +31,7 @@ header nav ul {
 }
 
 main {
-    margin: 6em auto auto;
+    margin: var(--header-height) auto auto;
     padding: 1em;
     flex: 1 0 auto;
 }
