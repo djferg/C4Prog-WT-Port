@@ -25,9 +25,15 @@ header nav ul {
 }
 
 main {
-    margin: auto;
-    padding: 6em 1em;
+    margin: 6em auto auto;
+    padding: 1em;
     flex: 1 0 auto;
+}
+
+main article {
+    border: black solid 1px;
+    padding: 1em;
+    margin: 0.2em;
 }
 
 main aside {
@@ -66,8 +72,7 @@ body > footer {
     }
 
     main article {
-        width: 50%;
-        padding: 1em;
+        width: 48%;
     }
 
     main aside {
@@ -75,8 +80,11 @@ body > footer {
         float: right;
         width: 30%;
         background: #ccc;
-        margin: 1em;
+        border: black solid 1px;
+        margin: 0.2em;
         padding: 1em;
     }
+
+
 }
 
