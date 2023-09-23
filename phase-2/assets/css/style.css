@@ -31,9 +31,9 @@ main {
 }
 
 main article {
-    border: black solid 1px;
+    border: black inset 1px;
     padding: 1em;
-    margin: 0.2em;
+    margin: .2em;
 }
 
 main aside {
@@ -80,11 +80,29 @@ body > footer {
         float: right;
         width: 30%;
         background: #ccc;
-        border: black solid 1px;
-        margin: 0.2em;
+        /*border: black solid 1px;*/
+        margin: .2em;
+    }
+
+    main aside > section {
+        border: #999 inset 1px;
+    }
+
+    main aside header {
+        color: #fff;
+        background: #666;
+        padding: .5em;
+    }
+
+    main aside section section {
         padding: 1em;
     }
 
+    main aside footer {
+        color: #fff;
+        background: #666;
+        padding: .5em;
+    }
 
 }
 
