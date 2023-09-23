@@ -94,13 +94,14 @@ body > footer {
         border: #999 inset 1px;
     }
 
-    main aside header {
+    main aside h2 {
         color: #fff;
         background: #666;
         padding: .5em;
+        margin: 0;
     }
 
-    main aside section section {
+    main aside section p {
         padding: 1em;
     }
 
