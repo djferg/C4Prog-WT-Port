@@ -1,3 +1,9 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 body > header {
     position: fixed;
     width: 100%;
@@ -21,6 +27,7 @@ header nav ul {
 main {
     margin: auto;
     padding: 6em 1em;
+    flex: 1 0 auto;
 }
 
 main aside {
