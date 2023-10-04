@@ -1,0 +1,115 @@
+:root {
+    --header-height: 6em; /* or whatever the height of your header is */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body > header {
+    position: fixed;
+    width: 100%;
+    height: var(--header-height);
+}
+
+header div{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    background: #999;
+    height: 100%;
+}
+
+header div img {
+    padding: .5em;
+}
+
+header nav ul {
+    display: none;
+}
+
+main {
+    margin: var(--header-height) auto auto;
+    padding: 1em;
+    flex: 1 0 auto;
+}
+
+main article {
+    border: black inset 1px;
+    padding: 1em;
+    margin: .2em;
+}
+
+main aside {
+    display: none;
+}
+
+body > footer {
+    background: #999;
+    padding: 1em;
+}
+
+@media (min-width: 1024px) {
+
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background: #666;
+        list-style-type: none;
+        margin: auto;
+    }
+
+    header nav ul a {
+        text-decoration: none;
+        color: white;
+    }
+
+    main {
+        width: 960px;
+    }
+
+    main #content {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-between;
+    }
+
+    main article {
+        width: 48%;
+    }
+
+    main aside {
+        display: block;
+        float: right;
+        width: 30%;
+        background: #ccc;
+        /*border: black solid 1px;*/
+        margin: .2em;
+    }
+
+    main aside > section {
+        border: #999 inset 1px;
+    }
+
+    main aside h2 {
+        color: #fff;
+        background: #666;
+        padding: .5em;
+        margin: 0;
+    }
+
+    main aside section p {
+        padding: 1em;
+    }
+
+    main aside footer {
+        color: #fff;
+        background: #666;
+        padding: .5em;
+    }
+
+}
+
