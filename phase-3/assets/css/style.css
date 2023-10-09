@@ -115,7 +115,6 @@ body > footer a:link, a:visited{
     aside {
         display: block;
         grid-area: aside;
-        background: #ccc;
     }
 
     aside img {
@@ -123,19 +122,21 @@ body > footer a:link, a:visited{
         border-radius: .2em;
     }
 
-    aside > section {
-        border: #999 inset 1px;
+    aside section {
+        border: #fff .5em;
+        background: #fff;
+        border-radius: .5em;
+        margin-top: 1.5em;
+        padding: 1.5em;
     }
 
-    aside h2 {
-        color: #fff;
-        background: #666;
-        padding: .5em;
-        margin: 0;
+    aside section h2 {
+        color: #000;
+        margin: 0 0 0.5em 0;
     }
 
     aside section p {
-        padding: 1em;
+
     }
 
     aside footer {
