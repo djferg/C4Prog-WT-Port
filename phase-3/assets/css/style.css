@@ -3,16 +3,21 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header"
+    ". main ."
+    "footer footer footer";
     background: #def4ff;
 }
 
 body > header {
     position: fixed;
-    width: 100%;
     height: var(--header-height);
+    background: #ff4255;
+    width: 100%;
 }
 
 header div{
@@ -33,16 +38,12 @@ header nav ul {
     padding: .5em;
 }
 
-main {
-    margin: var(--header-height) auto auto;
-    padding: 1em;
-    flex: 1 0 auto;
+main, aside {
+    margin-top: var(--header-height);
 }
 
 main article {
     border: #fff .5em;
-    padding: 1em;
-    margin: .2em;
     background: #fff;
     border-radius: .5em;
 }
@@ -56,14 +57,20 @@ main img {
     border-radius: .2em;
 }
 
-main aside {
+aside {
     display: none;
+}
+
+main {
+    grid-area: main;
 }
 
 body > footer {
     color: #fff;
     background: #064e74;
     padding: 1em;
+    width: 100%;
+    grid-area: footer;
 }
 
 body > footer a:link, a:visited{
@@ -72,6 +79,17 @@ body > footer a:link, a:visited{
 }
 
 @media (min-width: 1024px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 15% 50% 20% 15%;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header header header header"
+            ". main aside ."
+            "footer footer footer footer";
+        background: #def4ff;
+    }
 
     header nav ul {
         display: flex;
@@ -88,48 +106,39 @@ body > footer a:link, a:visited{
     }
 
     main {
-        width: 960px;
+        grid-area: main;
     }
 
-    main #content {
-        display: flex;
-        flex-flow: row wrap;
-        align-content: space-between;
-    }
-
-    main article {
-        width: 48%;
-    }
-
-    main aside {
+    aside {
         display: block;
-        float: right;
-        width: 30%;
+        grid-area: aside;
         background: #ccc;
-        /*border: black solid 1px;*/
-        margin: .2em;
     }
 
-    main aside > section {
+    aside img {
+        width: 100%;
+        border-radius: .2em;
+    }
+
+    aside > section {
         border: #999 inset 1px;
     }
 
-    main aside h2 {
+    aside h2 {
         color: #fff;
         background: #666;
         padding: .5em;
         margin: 0;
     }
 
-    main aside section p {
+    aside section p {
         padding: 1em;
     }
 
-    main aside footer {
+    aside footer {
         color: #fff;
         background: #666;
         padding: .5em;
     }
-
 }
 
