@@ -1,5 +1,5 @@
 :root {
-    --header-height: 7em; /* or whatever the height of your header is */
+    --header-height: 5em;
 }
 
 body {
@@ -81,6 +81,10 @@ body > footer a:link, a:visited{
 }
 
 @media (min-width: 1024px) {
+
+    :root {
+        --header-height: 7em;
+    }
 
     body {
         grid-template-columns: 15% 50% 20% 15%;
