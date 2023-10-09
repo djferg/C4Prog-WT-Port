@@ -46,10 +46,13 @@ main article {
     border: #fff .5em;
     background: #fff;
     border-radius: .5em;
+    margin: 1.5em;
+    padding: 2em;
 }
 
 main article h2 {
     color: #ff4255;
+    margin: 0 0 0.5em 0;
 }
 
 main img {
