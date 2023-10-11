@@ -1,0 +1,6 @@
+evidence/
+### WebStorm force ignore the .idea folder and all its contents
+.idea
+.idea/
+.idea/*
+.idea/**
