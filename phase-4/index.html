@@ -113,10 +113,10 @@
         <h2>API Response Form</h2>
         <img alt="Computer code on a laptop in a dark room" src="assets/images/pexels-markus-spiske-177598.jpg">
         <p>This is an HTML form that will retrieve data from an API and display a response below.</p>
-        <form method="post">
+        <form onsubmit="fetchJokes(event)">
             <label for="jokeCount">Number of Jokes:</label>
-            <input type="text" id="jokeCount" name="jokeCount"/>
-            <buton type="submit">Submit</buton>
+            <input type="number" id="jokeCount" name="jokeCount"/>
+            <button type="submit">Submit</button>
         </form>
         <div id="APIResponseBox">Response displays here.</div>
         <footer>Douglas Fergusson</footer>
@@ -141,4 +141,5 @@
 </footer>
 
 </body>
+<script src="assets/js/apiform.js"></script>
 </html>
