@@ -18,10 +18,13 @@
 | chinook	   | 169,229,187	 | #a9e5bb |
 | ↳ 800	   | 34,89,52	 | #225934 |
 
-Tailwind Components Required:
-Sticky header
-Navigation bar
-A footer
-Vertical card with header, image and section
+### Tailwind Components Required:
+
+ - Sticky header
+ - Navigation bar
+ - A footer
+ - Vertical card with header, image and section
+
+### Testing
 
 This site was tested on Edge (Blink) and Firefox (Gecko)
